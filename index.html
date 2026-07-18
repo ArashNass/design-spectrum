@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="Eurocode 8, ASCE 7-22, NZS 1170.5, AS 1170.4, NBC, TBDY 2018, IS 1893, GB 50011, NTC-Sismo and Iran Standard 2800 seismic spectrum generator" name="description"/>
-<title>Seismic Design Spectrum Generator â€” Seismic Tools</title>
+<title>Seismic Design Spectrum Generator — Seismic Tools</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
@@ -921,22 +921,22 @@
 <span aria-hidden="true" class="standard-flag" id="standardPickerFlag"></span>
 <span class="standard-picker-copy">
 <span class="standard-picker-country" id="standardPickerCountry">Europe</span>
-<span class="standard-picker-code" id="standardPickerCode">Eurocode 8 Â· EN 1998-1:2004</span>
+<span class="standard-picker-code" id="standardPickerCode">Eurocode 8 · EN 1998-1:2004</span>
 </span>
-<span aria-hidden="true" class="standard-picker-chevron">âŒ„</span>
+<span aria-hidden="true" class="standard-picker-chevron">⌄</span>
 </button>
 <div aria-labelledby="standardPickerButton" class="standard-menu hidden" id="standardMenu" role="listbox"></div>
 <select aria-hidden="true" class="standard-native" id="standard" tabindex="-1">
-<option value="eurocode">Europe â€” Eurocode 8</option>
-<option value="usa">United States â€” ASCE 7-22</option>
-<option value="newzealand">New Zealand â€” NZS 1170.5 (simplified)</option>
-<option value="australia">Australia â€” AS 1170.4</option>
-<option value="canada">Canada â€” NBC</option>
-<option value="turkey">TÃ¼rkiye â€” TBDY 2018</option>
-<option value="india">India â€” IS 1893:2016</option>
-<option value="china">China â€” GB 50011</option>
-<option value="mexico">Mexico â€” NTC-Sismo 2023</option>
-<option value="iran">Iran â€” Standard No. 2800</option>
+<option value="eurocode">Europe — Eurocode 8</option>
+<option value="usa">United States — ASCE 7-22</option>
+<option value="newzealand">New Zealand — NZS 1170.5 (simplified)</option>
+<option value="australia">Australia — AS 1170.4</option>
+<option value="canada">Canada — NBC</option>
+<option value="turkey">Türkiye — TBDY 2018</option>
+<option value="india">India — IS 1893:2016</option>
+<option value="china">China — GB 50011</option>
+<option value="mexico">Mexico — NTC-Sismo 2023</option>
+<option value="iran">Iran — Standard No. 2800</option>
 </select>
 </div>
 </div>
@@ -954,11 +954,11 @@
 <div class="field">
 <label for="ecGroundType" title="Soil profile at the site, per EN 1998-1 Table 3.1">Ground type</label>
 <select id="ecGroundType">
-<option value="A">A â€” Rock</option>
-<option value="B">B â€” Very dense soil</option>
-<option selected="" value="C">C â€” Dense / medium soil</option>
-<option value="D">D â€” Loose soil</option>
-<option value="E">E â€” Surface alluvium</option>
+<option value="A">A — Rock</option>
+<option value="B">B — Very dense soil</option>
+<option selected="" value="C">C — Dense / medium soil</option>
+<option value="D">D — Loose soil</option>
+<option value="E">E — Surface alluvium</option>
 </select>
 </div>
 </div>
@@ -971,11 +971,11 @@
 </div>
 <div class="two-col">
 <div class="field">
-<label for="ecGammaI" title="Scales the reference PGA up or down based on the building's importance class">Importance factor, Î³<sub>I</sub></label>
+<label for="ecGammaI" title="Scales the reference PGA up or down based on the building's importance class">Importance factor, γ<sub>I</sub></label>
 <input id="ecGammaI" max="2.00" min="0.50" step="0.05" type="number" value="1.00"/>
 </div>
 <div class="field">
-<label for="ecDamping" title="Viscous damping ratio of the structure, used to correct the spectral shape">Damping, Î¾ <span class="hint">%</span></label>
+<label for="ecDamping" title="Viscous damping ratio of the structure, used to correct the spectral shape">Damping, ξ <span class="hint">%</span></label>
 <input id="ecDamping" max="30" min="0.1" step="0.5" type="number" value="5"/>
 </div>
 </div>
@@ -989,8 +989,8 @@
 <div class="field">
 <label for="usSpectrumOption" title="Two-period uses SDS/SD1 you enter; multi-period pulls the full curve from USGS">Response spectrum option</label>
 <select id="usSpectrumOption">
-<option value="twoPeriod">Two-period spectrum â€” manual inputs</option>
-<option value="multiPeriod">Multi-period spectrum â€” USGS lookup</option>
+<option value="twoPeriod">Two-period spectrum — manual inputs</option>
+<option value="multiPeriod">Multi-period spectrum — USGS lookup</option>
 </select>
 </div>
 <div id="usTwoPeriodInputs">
@@ -998,14 +998,14 @@
 <div class="field">
 <label for="usSiteClass" title="Site soil classification, per ASCE 7-22 Table 20.3-1">Site Class</label>
 <select id="usSiteClass">
-<option value="A">A â€” Hard rock</option>
-<option value="B">B â€” Rock</option>
-<option value="BC">BC â€” Reference rock</option>
-<option selected="" value="C">C â€” Very dense soil / soft rock</option>
-<option value="CD">CD â€” Transitional</option>
-<option value="D">D â€” Stiff soil</option>
-<option value="DE">DE â€” Transitional</option>
-<option value="E">E â€” Soft clay soil</option>
+<option value="A">A — Hard rock</option>
+<option value="B">B — Rock</option>
+<option value="BC">BC — Reference rock</option>
+<option selected="" value="C">C — Very dense soil / soft rock</option>
+<option value="CD">CD — Transitional</option>
+<option value="D">D — Stiff soil</option>
+<option value="DE">DE — Transitional</option>
+<option value="E">E — Soft clay soil</option>
 </select>
 </div>
 <div class="field">
@@ -1075,15 +1075,15 @@
 </div>
 </div>
 <div class="hidden" id="nzInputs">
-<p class="subheading">NZS 1170.5 parameters â€” simplified comparison</p>
+<p class="subheading">NZS 1170.5 parameters — simplified comparison</p>
 <div class="field">
 <label for="nzSiteClass" title="Site subsoil class, per NZS 1170.5 Table 3.2">Site subsoil class</label>
 <select id="nzSiteClass">
-<option value="A">A â€” Strong rock</option>
-<option value="B">B â€” Rock</option>
-<option selected="" value="C">C â€” Shallow soil</option>
-<option value="D">D â€” Deep or soft soil</option>
-<option value="E">E â€” Very soft soil</option>
+<option value="A">A — Strong rock</option>
+<option value="B">B — Rock</option>
+<option selected="" value="C">C — Shallow soil</option>
+<option value="D">D — Deep or soft soil</option>
+<option value="E">E — Very soft soil</option>
 </select>
 </div>
 <div class="two-col">
@@ -1105,7 +1105,7 @@
 </div>
 <div class="two-col">
 <div class="field">
-<label for="nzMu" title="Structural ductility factor">Structural ductility, Î¼</label>
+<label for="nzMu" title="Structural ductility factor">Structural ductility, μ</label>
 <input id="nzMu" max="6.00" min="1.00" step="0.10" type="number" value="3.00"/>
 </div>
 <div class="field">
@@ -1119,11 +1119,11 @@
 <div class="field">
 <label for="auSiteClass" title="Site subsoil class, per AS 1170.4 Table 4.1">Site subsoil class</label>
 <select id="auSiteClass">
-<option value="Ae">Ae â€” Strong rock</option>
-<option value="Be">Be â€” Rock</option>
-<option selected="" value="Ce">Ce â€” Shallow soil</option>
-<option value="De">De â€” Deep or soft soil</option>
-<option value="Ee">Ee â€” Very soft soil</option>
+<option value="Ae">Ae — Strong rock</option>
+<option value="Be">Be — Rock</option>
+<option selected="" value="Ce">Ce — Shallow soil</option>
+<option value="De">De — Deep or soft soil</option>
+<option value="Ee">Ee — Very soft soil</option>
 </select>
 </div>
 <div class="two-col">
@@ -1134,21 +1134,21 @@
 <div class="field">
 <label for="auProbability" title="Annual probability of exceedance used to derive the probability factor kp">Annual probability</label>
 <select id="auProbability">
-<option value="2500">1 / 2500 â€” kâ‚š = 1.80</option>
-<option value="2000">1 / 2000 â€” kâ‚š = 1.70</option>
-<option value="1500">1 / 1500 â€” kâ‚š = 1.50</option>
-<option value="1000">1 / 1000 â€” kâ‚š = 1.30</option>
-<option value="800">1 / 800 â€” kâ‚š = 1.25</option>
-<option selected="" value="500">1 / 500 â€” kâ‚š = 1.00</option>
-<option value="250">1 / 250 â€” kâ‚š = 0.75</option>
-<option value="200">1 / 200 â€” kâ‚š = 0.70</option>
-<option value="100">1 / 100 â€” kâ‚š = 0.50</option>
+<option value="2500">1 / 2500 — kₚ = 1.80</option>
+<option value="2000">1 / 2000 — kₚ = 1.70</option>
+<option value="1500">1 / 1500 — kₚ = 1.50</option>
+<option value="1000">1 / 1000 — kₚ = 1.30</option>
+<option value="800">1 / 800 — kₚ = 1.25</option>
+<option selected="" value="500">1 / 500 — kₚ = 1.00</option>
+<option value="250">1 / 250 — kₚ = 0.75</option>
+<option value="200">1 / 200 — kₚ = 0.70</option>
+<option value="100">1 / 100 — kₚ = 0.50</option>
 </select>
 </div>
 </div>
 <div class="two-col">
 <div class="field">
-<label for="auMu" title="Structural ductility factor">Structural ductility, Î¼</label>
+<label for="auMu" title="Structural ductility factor">Structural ductility, μ</label>
 <input id="auMu" max="6.00" min="1.00" step="0.10" type="number" value="3.00"/>
 </div>
 <div class="field">
@@ -1163,7 +1163,7 @@
 <div class="field">
 <label for="caSiteDesignation" title="Reference label for the selected site (for your records only)">Site designation</label>
 <select id="caSiteDesignation">
-<option selected="" value="X450">X450 â€” Vs30 = 450 m/s</option>
+<option selected="" value="X450">X450 — Vs30 = 450 m/s</option>
 <option value="A">Site Class A</option>
 <option value="B">Site Class B</option>
 <option value="C">Site Class C</option>
@@ -1184,7 +1184,7 @@
 <div class="field">
 <label for="caInterpolation" title="Method used to interpolate spectral values between the anchor periods">Interpolation method</label>
 <select id="caInterpolation">
-<option selected="" value="loglog">Logâ€“log between spectral periods</option>
+<option selected="" value="loglog">Log–log between spectral periods</option>
 <option value="linear">Linear between spectral periods</option>
 </select>
 </div>
@@ -1254,12 +1254,12 @@
 <div class="field">
 <label for="trSiteClass" title="Local soil class, per TBDY 2018">Local soil class</label>
 <select id="trSiteClass">
-<option value="ZA">ZA â€” Strong rock</option>
-<option value="ZB">ZB â€” Rock</option>
-<option value="ZC">ZC â€” Very dense soil / soft rock</option>
-<option selected="" value="ZD">ZD â€” Medium dense / stiff soil</option>
-<option value="ZE">ZE â€” Loose / soft soil</option>
-<option value="ZF">ZF â€” Site-specific study required</option>
+<option value="ZA">ZA — Strong rock</option>
+<option value="ZB">ZB — Rock</option>
+<option value="ZC">ZC — Very dense soil / soft rock</option>
+<option selected="" value="ZD">ZD — Medium dense / stiff soil</option>
+<option value="ZE">ZE — Loose / soft soil</option>
+<option value="ZF">ZF — Site-specific study required</option>
 </select>
 </div>
 <div class="two-col">
@@ -1297,18 +1297,18 @@
 <div class="field">
 <label for="inZone" title="Seismic zone of the site, per IS 1893 Part 1 Figure 1">Seismic zone</label>
 <select id="inZone">
-<option value="II">Zone II â€” Z = 0.10</option>
-<option value="III">Zone III â€” Z = 0.16</option>
-<option selected="" value="IV">Zone IV â€” Z = 0.24</option>
-<option value="V">Zone V â€” Z = 0.36</option>
+<option value="II">Zone II — Z = 0.10</option>
+<option value="III">Zone III — Z = 0.16</option>
+<option selected="" value="IV">Zone IV — Z = 0.24</option>
+<option value="V">Zone V — Z = 0.36</option>
 </select>
 </div>
 <div class="field">
 <label for="inSoil" title="Soil type at the site (I = rock/hard, II = medium, III = soft)">Soil type</label>
 <select id="inSoil">
-<option value="I">Type I â€” Rock / hard soil</option>
-<option selected="" value="II">Type II â€” Medium / stiff soil</option>
-<option value="III">Type III â€” Soft soil</option>
+<option value="I">Type I — Rock / hard soil</option>
+<option selected="" value="II">Type II — Medium / stiff soil</option>
+<option value="III">Type III — Soft soil</option>
 </select>
 </div>
 </div>
@@ -1329,12 +1329,12 @@
 <div class="field">
 <label for="cnIntensity" title="Seismic precautionary intensity and associated design PGA for the site">Precaution intensity</label>
 <select id="cnIntensity">
-<option value="6_005">6 degree â€” 0.05g</option>
-<option value="7_010">7 degree â€” 0.10g</option>
-<option value="7_015">7 degree â€” 0.15g</option>
-<option selected="" value="8_020">8 degree â€” 0.20g</option>
-<option value="8_030">8 degree â€” 0.30g</option>
-<option value="9_040">9 degree â€” 0.40g</option>
+<option value="6_005">6 degree — 0.05g</option>
+<option value="7_010">7 degree — 0.10g</option>
+<option value="7_015">7 degree — 0.15g</option>
+<option selected="" value="8_020">8 degree — 0.20g</option>
+<option value="8_030">8 degree — 0.30g</option>
+<option value="9_040">9 degree — 0.40g</option>
 </select>
 </div>
 <div class="field">
@@ -1350,15 +1350,15 @@
 <div class="field">
 <label for="cnSite" title="Site soil category, per GB 50011 Table 4.1.6">Site category</label>
 <select id="cnSite">
-<option value="I0">Iâ‚€</option>
-<option value="I1">Iâ‚</option>
+<option value="I0">I₀</option>
+<option value="I1">I₁</option>
 <option selected="" value="II">II</option>
 <option value="III">III</option>
 <option value="IV">IV</option>
 </select>
 </div>
 <div class="field">
-<label for="cnDamping" title="Structural damping ratio, used to adjust the spectral shape factors">Damping ratio, Î¶ <span class="hint">%</span></label>
+<label for="cnDamping" title="Structural damping ratio, used to adjust the spectral shape factors">Damping ratio, ζ <span class="hint">%</span></label>
 <input id="cnDamping" max="20" min="1" step="0.5" type="number" value="5.0"/>
 </div>
 </div>
@@ -1367,7 +1367,7 @@
 <p class="subheading">Mexico City NTC-Sismo 2023</p>
 <div class="two-col">
 <div class="field">
-<label for="mxA0" title="Ground-level spectral ordinate at T = 0">Ground coefficient, aâ‚€</label>
+<label for="mxA0" title="Ground-level spectral ordinate at T = 0">Ground coefficient, a₀</label>
 <input id="mxA0" max="3.0" min="0.001" step="0.001" type="number" value="0.120"/>
 </div>
 <div class="field">
@@ -1391,30 +1391,30 @@
 <input id="mxK" max="3.00" min="0.10" step="0.05" type="number" value="1.50"/>
 </div>
 <div class="field">
-<label for="mxReduction" title="Combined ductility (Q'), redundancy (R') and overstrength reduction">Total reduction, Qâ€²Râ€²Ï</label>
+<label for="mxReduction" title="Combined ductility (Q'), redundancy (R') and overstrength reduction">Total reduction, Q′R′ρ</label>
 <input id="mxReduction" max="20.00" min="1.00" step="0.10" type="number" value="6.00"/>
 </div>
 </div>
 </div>
 <div class="hidden" id="irInputs">
-<p class="subheading">Iranian Standard No. 2800 â€” 4th edition</p>
+<p class="subheading">Iranian Standard No. 2800 — 4th edition</p>
 <div class="two-col">
 <div class="field">
 <label for="irZone" title="Design base acceleration ratio (A), representing relative seismic hazard">Relative seismic hazard</label>
 <select id="irZone">
-<option value="0.20">Low â€” A = 0.20</option>
-<option value="0.25">Moderate â€” A = 0.25</option>
-<option value="0.30">High â€” A = 0.30</option>
-<option selected="" value="0.35">Very high â€” A = 0.35</option>
+<option value="0.20">Low — A = 0.20</option>
+<option value="0.25">Moderate — A = 0.25</option>
+<option value="0.30">High — A = 0.30</option>
+<option selected="" value="0.35">Very high — A = 0.35</option>
 </select>
 </div>
 <div class="field">
 <label for="irSoil" title="Soil type at the site, per Standard No. 2800 Table 2-3">Soil type</label>
 <select id="irSoil">
-<option value="I">Type I â€” Rock / very stiff</option>
-<option value="II">Type II â€” Stiff soil</option>
-<option selected="" value="III">Type III â€” Medium soil</option>
-<option value="IV">Type IV â€” Soft soil</option>
+<option value="I">Type I — Rock / very stiff</option>
+<option value="II">Type II — Stiff soil</option>
+<option selected="" value="III">Type III — Medium soil</option>
+<option value="IV">Type IV — Soft soil</option>
 </select>
 </div>
 </div>
@@ -1469,8 +1469,8 @@
 <span class="legend-item"><span class="legend-line line-two"></span><span id="legendTwo">Design</span></span>
 <div aria-label="Y-axis units" class="unit-toggle" id="accelUnitToggle" role="group">
 <button class="unit-toggle-btn active" data-unit="g" type="button">Sa (g)</button>
-<button class="unit-toggle-btn" data-unit="ms2" type="button">Sa (m/sÂ²)</button>
-<button class="unit-toggle-btn" data-unit="fts2" type="button">Sa (ft/sÂ²)</button>
+<button class="unit-toggle-btn" data-unit="ms2" type="button">Sa (m/s²)</button>
+<button class="unit-toggle-btn" data-unit="fts2" type="button">Sa (ft/s²)</button>
 </div>
 </div>
 </div>
@@ -1501,7 +1501,7 @@
 .site-ft .ft-ic:hover{opacity:1}
 .site-ft .ft-ic svg{width:17px;height:17px}
 @media(max-width:520px){.site-ft .ft-in{justify-content:center;text-align:center}}
-</style><div class="ft-in"><span class="ft-copy">Â© 2026 Arash Nassirpour. All rights reserved.</span><nav class="ft-links"><a href="/about/">About</a><a href="/contact/">Contact</a><a aria-label="YouTube" class="ft-ic" href="https://www.youtube.com/@Structural.Analysis" rel="noopener" target="_blank"><svg fill="none" viewbox="0 0 24 24"><rect height="13" rx="3.5" stroke="currentColor" stroke-width="1.8" width="19" x="2.5" y="5.5"></rect><path d="M10.3 9.4v5.2l4.6-2.6-4.6-2.6z" fill="currentColor"></path></svg></a><a aria-label="LinkedIn" class="ft-ic" href="https://www.linkedin.com/in/arashnassirpour/" rel="noopener" target="_blank"><svg fill="none" viewbox="0 0 24 24"><rect height="18" rx="3" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="3"></rect><path d="M8 10.5V17M8 7.2v.1M12 17v-3.7c0-1.3.9-2.3 2.2-2.3 1.3 0 2.3 1 2.3 2.3V17" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></a></nav></div></footer>
+</style><div class="ft-in"><span class="ft-copy">© 2026 Arash Nassirpour. All rights reserved.</span><nav class="ft-links"><a href="/about/">About</a><a href="/contact/">Contact</a><a aria-label="YouTube" class="ft-ic" href="https://www.youtube.com/@Structural.Analysis" rel="noopener" target="_blank"><svg fill="none" viewbox="0 0 24 24"><rect height="13" rx="3.5" stroke="currentColor" stroke-width="1.8" width="19" x="2.5" y="5.5"></rect><path d="M10.3 9.4v5.2l4.6-2.6-4.6-2.6z" fill="currentColor"></path></svg></a><a aria-label="LinkedIn" class="ft-ic" href="https://www.linkedin.com/in/arashnassirpour/" rel="noopener" target="_blank"><svg fill="none" viewbox="0 0 24 24"><rect height="18" rx="3" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="3"></rect><path d="M8 10.5V17M8 7.2v.1M12 17v-3.7c0-1.3.9-2.3 2.2-2.3 1.3 0 2.3 1 2.3 2.3V17" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></a></nav></div></footer>
 <script>
     const EC_PARAMETERS = {
       1: {
@@ -1652,7 +1652,7 @@
     const STANDARD_INFO = {
       eurocode: {
         country: "Europe",
-        code: "Eurocode 8 Â· EN 1998-1:2004",
+        code: "Eurocode 8 · EN 1998-1:2004",
         flag: `<svg viewBox="0 0 36 24" xmlns="http://www.w3.org/2000/svg">
           <rect width="36" height="24" fill="#003399"/>
           <g fill="#ffcc00">
@@ -1692,7 +1692,7 @@
       },
       newzealand: {
         country: "New Zealand",
-        code: "NZS 1170.5:2004 Â· simplified",
+        code: "NZS 1170.5:2004 · simplified",
         flag: `<svg viewBox="0 0 36 24" xmlns="http://www.w3.org/2000/svg">
           <rect width="36" height="24" fill="#012169"/>
           <g fill="#d22630" stroke="#fff" stroke-width=".7">
@@ -1737,7 +1737,7 @@
         </svg>`
       },
       turkey: {
-        country: "TÃ¼rkiye",
+        country: "Türkiye",
         code: "TBDY 2018",
         flag: `<svg viewBox="0 0 36 24" xmlns="http://www.w3.org/2000/svg">
           <rect width="36" height="24" fill="#e30a17"/>
@@ -1761,7 +1761,7 @@
       },
       china: {
         country: "China",
-        code: "GB 50011-2010 Â· 2016 edition",
+        code: "GB 50011-2010 · 2016 edition",
         flag: `<svg viewBox="0 0 36 24" xmlns="http://www.w3.org/2000/svg">
           <rect width="36" height="24" fill="#de2910"/>
           <path fill="#ffde00" d="M7 3.2l1 2.4 2.6.2-2 1.7.6 2.5L7 8.7 4.8 10l.6-2.5-2-1.7 2.6-.2z"/>
@@ -1787,7 +1787,7 @@
       },
       iran: {
         country: "Iran",
-        code: "Standard No. 2800 Â· 4th edition",
+        code: "Standard No. 2800 · 4th edition",
         flag: `<svg viewBox="0 0 36 24" xmlns="http://www.w3.org/2000/svg">
           <rect width="36" height="8" fill="#239f40"/>
           <rect y="8" width="36" height="8" fill="#fff"/>
@@ -1811,7 +1811,7 @@
         option.classList.toggle("active", active);
         option.setAttribute("aria-selected", String(active));
         option.tabIndex = active ? 0 : -1;
-        option.querySelector(".checkmark").textContent = active ? "âœ“" : "";
+        option.querySelector(".checkmark").textContent = active ? "✓" : "";
       });
     }
 
@@ -1886,8 +1886,8 @@
 
     const ACCEL_UNITS = {
       g:    { factor: 1,        suffix: "g",     decimals: 3 },
-      ms2:  { factor: 9.80665,  suffix: "m/sÂ²",  decimals: 2 },
-      fts2: { factor: 32.17405, suffix: "ft/sÂ²", decimals: 2 }
+      ms2:  { factor: 9.80665,  suffix: "m/s²",  decimals: 2 },
+      fts2: { factor: 32.17405, suffix: "ft/s²", decimals: 2 }
     };
 
     let currentUnit = "g";
@@ -1906,7 +1906,7 @@
 
     function formatMetric(element, value, unit = "") {
       if (!Number.isFinite(value)) {
-        element.textContent = "â€”";
+        element.textContent = "—";
         return;
       }
       element.innerHTML = `${value.toFixed(3)}${unit ? `<span class="unit">${unit}</span>` : ""}`;
@@ -1985,11 +1985,11 @@
         const ta = Number(els.mxTa.value);
         const tb = Number(els.mxTb.value);
         if (Number.isFinite(a0) && Number.isFinite(c) && c < a0) {
-          setInputError(els.mxC, "Plateau coefficient c must be greater than or equal to aâ‚€.");
+          setInputError(els.mxC, "Plateau coefficient c must be greater than or equal to a₀.");
           valid = false;
         }
         if (Number.isFinite(ta) && Number.isFinite(tb) && tb <= ta) {
-          setInputError(els.mxTb, "Táµ¦ must be greater than Tâ‚.");
+          setInputError(els.mxTb, "Tᵦ must be greater than Tₐ.");
           valid = false;
         }
       }
@@ -1999,7 +1999,7 @@
         const tl = Number(els.usTl.value);
         const ts = Number.isFinite(sds) && sds > 0 ? sd1 / sds : NaN;
         if (Number.isFinite(ts) && Number.isFinite(tl) && tl <= ts) {
-          setInputError(els.usTl, `Tâ‚— must exceed Tâ‚› (${ts.toFixed(3)} s) for the entered Sá´…â‚› and Sá´…â‚.`);
+          setInputError(els.usTl, `Tₗ must exceed Tₛ (${ts.toFixed(3)} s) for the entered Sᴅₛ and Sᴅ₁.`);
           valid = false;
         }
       }
@@ -2888,7 +2888,7 @@
       els.detailsCopy.textContent = "Recommended values for the selected spectrum and ground type.";
       els.parameterGrid.innerHTML = [
         parameterCard("Soil factor, S", x.S.toFixed(2)),
-        parameterCard("Damping factor, Î·", x.eta.toFixed(3)),
+        parameterCard("Damping factor, η", x.eta.toFixed(3)),
         parameterCard("T<sub>B</sub>", `${x.TB.toFixed(2)} s`),
         parameterCard("T<sub>C</sub>", `${x.TC.toFixed(2)} s`),
         parameterCard("T<sub>D</sub>", `${x.TD.toFixed(2)} s`),
@@ -2897,16 +2897,16 @@
 
       els.formulaBox.textContent =
 `Elastic spectrum:
-0 â‰¤ T â‰¤ TB:  Se(T) = agÂ·SÂ·[1 + (T/TB)Â·(2.5Î· âˆ’ 1)]
-TB â‰¤ T â‰¤ TC: Se(T) = agÂ·SÂ·2.5Î·
-TC â‰¤ T â‰¤ TD: Se(T) = agÂ·SÂ·2.5Î·Â·(TC/T)
-TD â‰¤ T â‰¤ 4s: Se(T) = agÂ·SÂ·2.5Î·Â·(TCÂ·TD/TÂ²)
+0 ≤ T ≤ TB:  Se(T) = ag·S·[1 + (T/TB)·(2.5η − 1)]
+TB ≤ T ≤ TC: Se(T) = ag·S·2.5η
+TC ≤ T ≤ TD: Se(T) = ag·S·2.5η·(TC/T)
+TD ≤ T ≤ 4s: Se(T) = ag·S·2.5η·(TC·TD/T²)
 
 Reduced design spectrum:
-0 â‰¤ T â‰¤ TB:  Sd(T) = agÂ·SÂ·[2/3 + (T/TB)Â·(2.5/q âˆ’ 2/3)]
-TB â‰¤ T â‰¤ TC: Sd(T) = agÂ·SÂ·2.5/q
-TC â‰¤ T â‰¤ TD: Sd(T) = max[agÂ·SÂ·(2.5/q)Â·(TC/T), Î²Â·ag]
-TD â‰¤ T:      Sd(T) = max[agÂ·SÂ·(2.5/q)Â·(TCÂ·TD/TÂ²), Î²Â·ag]`;
+0 ≤ T ≤ TB:  Sd(T) = ag·S·[2/3 + (T/TB)·(2.5/q − 2/3)]
+TB ≤ T ≤ TC: Sd(T) = ag·S·2.5/q
+TC ≤ T ≤ TD: Sd(T) = max[ag·S·(2.5/q)·(TC/T), β·ag]
+TD ≤ T:      Sd(T) = max[ag·S·(2.5/q)·(TC·TD/T²), β·ag]`;
 
       els.standardNote.innerHTML =
         "<strong>Important:</strong> These are recommended EN 1998-1 values. The applicable National Annex may define different hazard and spectrum parameters.";
@@ -2960,15 +2960,15 @@ TD â‰¤ T:      Sd(T) = max[agÂ·SÂ·(2.5/q)Â·(TCÂ·TD/TÂ²), Î²Â·a
 
       els.formulaBox.textContent =
 `Design spectrum:
-0 â‰¤ T < T0:   Sa(T) = SDSÂ·[0.4 + 0.6Â·T/T0]
-T0 â‰¤ T â‰¤ TS:  Sa(T) = SDS
-TS < T â‰¤ TL:  Sa(T) = SD1/T
-T > TL:       Sa(T) = SD1Â·TL/TÂ²
+0 ≤ T < T0:   Sa(T) = SDS·[0.4 + 0.6·T/T0]
+T0 ≤ T ≤ TS:  Sa(T) = SDS
+TS < T ≤ TL:  Sa(T) = SD1/T
+T > TL:       Sa(T) = SD1·TL/T²
 
-T0 = 0.2Â·SD1/SDS
+T0 = 0.2·SD1/SDS
 TS = SD1/SDS
-SMS = 1.5Â·SDS
-SM1 = 1.5Â·SD1
+SMS = 1.5·SDS
+SM1 = 1.5·SD1
 MCER spectrum uses SMS and SM1 in the same spectral shape.`;
 
       els.standardNote.innerHTML =
@@ -2994,7 +2994,7 @@ MCER spectrum uses SMS and SM1 in the same spectral shape.`;
         formatMetric(els.metric1Value, 0, "g");
         formatMetric(els.metric2Value, 0, "g");
         formatMetric(els.metric3Value, 0, "g");
-        els.metric4Value.textContent = "â€”";
+        els.metric4Value.textContent = "—";
 
         els.chartTitle.textContent = "ASCE 7-22 multi-period response spectra";
         els.chartSubtitle.textContent = "Enter a US location and load the official USGS spectrum.";
@@ -3016,12 +3016,12 @@ MCER spectrum uses SMS and SM1 in the same spectral shape.`;
 `ASCE 7-22 multi-period spectra are obtained from the official USGS Design Ground Motions web service.
 
 The returned data include:
-â€¢ Multi-period MCER ordinates
-â€¢ Multi-period design ordinates
-â€¢ SDS, SD1, PGA_M, TL and Seismic Design Category`;
+• Multi-period MCER ordinates
+• Multi-period design ordinates
+• SDS, SD1, PGA_M, TL and Seismic Design Category`;
 
         els.standardNote.innerHTML =
-          '<strong>Internet required:</strong> Click â€œLoad USGS spectrumâ€ to retrieve location-specific ASCE 7-22 data. The manual two-period option remains available offline.';
+          '<strong>Internet required:</strong> Click “Load USGS spectrum” to retrieve location-specific ASCE 7-22 data. The manual two-period option remains available offline.';
 
         drawChart([{ T: 0, first: 0, second: 0 }, { T: 10, first: 0, second: 0 }], 10, []);
         return;
@@ -3047,7 +3047,7 @@ The returned data include:
       formatMetric(els.metric1Value, Number(usgsData.sds), "g");
       formatMetric(els.metric2Value, Number(usgsData.sd1), "g");
       formatMetric(els.metric3Value, Number(usgsData.pgam), "g");
-      els.metric4Value.textContent = usgsData.sdc || "â€”";
+      els.metric4Value.textContent = usgsData.sdc || "—";
 
       els.chartTitle.textContent = "ASCE 7-22 multi-period response spectra";
       els.chartSubtitle.textContent = "Official location-specific USGS MCER and design spectra.";
@@ -3062,11 +3062,11 @@ The returned data include:
         parameterCard("T<sub>0</sub>", `${Number(usgsData.t0).toFixed(3)} s`),
         parameterCard("T<sub>S</sub>", `${Number(usgsData.ts).toFixed(3)} s`),
         parameterCard("T<sub>L</sub>", `${Number(usgsData.tl).toFixed(2)} s`),
-        parameterCard("SDC", usgsData.sdc || "â€”")
+        parameterCard("SDC", usgsData.sdc || "—")
       ].join("");
 
       els.formulaBox.textContent =
-`The multi-period curve is returned directly by the USGS ASCE 7-22 web service as periodâ€“ordinate arrays.
+`The multi-period curve is returned directly by the USGS ASCE 7-22 web service as period–ordinate arrays.
 
 This avoids reducing the hazard to only SDS and SD1 and preserves the location-specific spectral shape.`;
 
@@ -3081,7 +3081,7 @@ This avoids reducing the hazard to only SDS and SD1 and preserves the location-s
       const x = newZealandInputs();
       currentRows = buildNzRows(x);
       currentMeta = {
-        standard: "NZS 1170.5:2004 â€” simplified comparison",
+        standard: "NZS 1170.5:2004 — simplified comparison",
         x,
         firstLabel: "Elastic site hazard spectrum C(T)",
         secondLabel: "Simplified reduced comparison Cd(T)"
@@ -3108,7 +3108,7 @@ This avoids reducing the hazard to only SDS and SD1 and preserves the location-s
       els.legendOne.textContent = "Elastic C(T)";
       els.legendTwo.textContent = "Simplified comparison";
 
-      els.detailsTitle.textContent = "Selected New Zealand parameters â€” simplified comparison";
+      els.detailsTitle.textContent = "Selected New Zealand parameters — simplified comparison";
       els.detailsCopy.textContent =
         "The elastic shape is scaled by Z and R; the reduced curve is a simplified comparison using a constant near-fault multiplier.";
 
@@ -3117,24 +3117,24 @@ This avoids reducing the hazard to only SDS and SD1 and preserves the location-s
         parameterCard("Hazard factor, Z", x.Z.toFixed(2)),
         parameterCard("Return factor, R", x.R.toFixed(2)),
         parameterCard("Near-fault, N", x.N.toFixed(2)),
-        parameterCard("Ductility, Î¼", x.mu.toFixed(2)),
+        parameterCard("Ductility, μ", x.mu.toFixed(2)),
         parameterCard("Performance, S<sub>p</sub>", x.Sp.toFixed(2))
       ].join("");
 
       els.formulaBox.textContent =
 `Elastic site hazard spectrum:
-C(T) = Ch(T) Â· Z Â· R Â· N(T,D)
+C(T) = Ch(T) · Z · R · N(T,D)
 
 Simplified comparison spectrum:
-Cd(T) = C(T) Â· Sp / kÎ¼(T)
+Cd(T) = C(T) · Sp / kμ(T)
 
 For T < 0.7 s:
-kÎ¼(T) = 1 + (Î¼ âˆ’ 1) Â· T/0.7
+kμ(T) = 1 + (μ − 1) · T/0.7
 
-For T â‰¥ 0.7 s:
-kÎ¼(T) = Î¼
+For T ≥ 0.7 s:
+kμ(T) = μ
 
-Ch(T) is the NZS 1170.5 spectral shape for Site Classes Aâ€“E.`;
+Ch(T) is the NZS 1170.5 spectral shape for Site Classes A–E.`;
 
       els.standardNote.innerHTML =
         '<strong>Simplified NZS comparison:</strong> This module uses the NZS 1170.5:2004 modal-response spectral shapes. '
@@ -3177,7 +3177,7 @@ Ch(T) is the NZS 1170.5 spectral shape for Site Classes Aâ€“E.`;
 
       els.chartTitle.textContent = "Australian elastic and design spectra";
       els.chartSubtitle.textContent =
-        "AS 1170.4:2024 site hazard spectrum and the structural design spectrum reduced by Sp/Î¼.";
+        "AS 1170.4:2024 site hazard spectrum and the structural design spectrum reduced by Sp/μ.";
       els.legendOne.textContent = "Elastic C(T)";
       els.legendTwo.textContent = "Design Cd(T)";
 
@@ -3194,21 +3194,21 @@ Ch(T) is the NZS 1170.5 spectral shape for Site Classes Aâ€“E.`;
         parameterCard("Probability factor, k<sub>p</sub>", x.kp.toFixed(2)),
         parameterCard("Hazard factor, Z", x.Z.toFixed(2)),
         parameterCard("Minimum k<sub>p</sub>Z", minimumText),
-        parameterCard("Ductility, Î¼", x.mu.toFixed(2)),
+        parameterCard("Ductility, μ", x.mu.toFixed(2)),
         parameterCard("Performance, S<sub>p</sub>", x.Sp.toFixed(2))
       ].join("");
 
       els.formulaBox.textContent =
 `Elastic site hazard spectrum:
-C(T) = kp Â· Z Â· Ch(T)
+C(T) = kp · Z · Ch(T)
 
 Code minimum:
-effective kpZ = max(kp Â· Z, minimum kpZ), where a minimum is specified
+effective kpZ = max(kp · Z, minimum kpZ), where a minimum is specified
 
 Design response spectrum:
-Cd(T) = C(T) Â· Sp / Î¼
+Cd(T) = C(T) · Sp / μ
 
-Ch(T) is the AS 1170.4 spectral shape factor for Site Classes Aeâ€“Ee.`;
+Ch(T) is the AS 1170.4 spectral shape factor for Site Classes Ae–Ee.`;
 
       const minimumApplied = x.effectiveKpZ > x.rawKpZ + 1e-12;
 
@@ -3218,7 +3218,7 @@ Ch(T) is the AS 1170.4 spectral shape factor for Site Classes Aeâ€“Ee.`;
         + (minimumApplied
           ? `, so the applicable minimum increases it to ${x.effectiveKpZ.toFixed(3)}.`
           : ` and no increase from the minimum k<sub>p</sub>Z table is required.`)
-        + ` The selected S<sub>p</sub> and Î¼ should match the actual structural system.`;
+        + ` The selected S<sub>p</sub> and μ should match the actual structural system.`;
 
       drawChart(currentRows, 5, [
         { label: "0.1", value: 0.10 },
@@ -3263,14 +3263,14 @@ Ch(T) is the AS 1170.4 spectral shape factor for Site Classes Aeâ€“Ee.`;
         "NBC 2020 spectral values are entered at the prescribed periods and interpolated between anchors.";
 
       const probabilityLabel = `${x.probability}% / 50 yr`;
-      const interpolationLabel = x.interpolation === "loglog" ? "Logâ€“log" : "Linear";
+      const interpolationLabel = x.interpolation === "loglog" ? "Log–log" : "Linear";
 
       els.parameterGrid.innerHTML = [
         parameterCard("Edition", `NBC ${x.edition}`),
         parameterCard("Site designation", x.siteDesignation),
         parameterCard("Probability", probabilityLabel),
         parameterCard("Interpolation", interpolationLabel),
-        parameterCard("I<sub>E</sub> Â· M<sub>v</sub> / R<sub>d</sub>R<sub>o</sub>", reduction.toFixed(3)),
+        parameterCard("I<sub>E</sub> · M<sub>v</sub> / R<sub>d</sub>R<sub>o</sub>", reduction.toFixed(3)),
         parameterCard("R<sub>d</sub> / R<sub>o</sub>", `${x.Rd.toFixed(2)} / ${x.Ro.toFixed(2)}`)
       ].join("");
 
@@ -3284,14 +3284,14 @@ T = 0.2, 0.5, 1.0, 2.0, 5.0 and 10.0 s
 This tool also connects PGA at T = 0 to Sa(0.2) by linear interpolation.
 
 Equivalent force-reduced spectrum:
-Sr(T) = S(T) Â· IE Â· Mv / (Rd Â· Ro)
+Sr(T) = S(T) · IE · Mv / (Rd · Ro)
 
 For T > 10 s:
-S(T) = Sa(10) Â· (10/T)Â²`;
+S(T) = Sa(10) · (10/T)²`;
 
       els.standardNote.innerHTML =
         `<strong>NBC ${x.edition}:</strong> Enter values from the official Canadian seismic hazard tool for the `
-        + 'selected code edition, site designation and probability. Linear or logâ€“log interpolation is available '
+        + 'selected code edition, site designation and probability. Linear or log–log interpolation is available '
         + 'between the specified periods. The reduced curve is an explanatory force-coefficient comparison; '
         + 'full design must apply the appropriate SFRS-specific M<sub>v</sub>, R<sub>d</sub>, R<sub>o</sub>, '
         + 'base-shear limits and other applicable Article 4.1.8 requirements.';
@@ -3312,7 +3312,7 @@ S(T) = Sa(10) Â· (10/T)Â²`;
       const built = buildTurkeyRows(x);
       currentRows = built.rows;
       currentMeta = {
-        standard: "TBDY 2018 TÃ¼rkiye",
+        standard: "TBDY 2018 Türkiye",
         x,
         firstLabel: "Horizontal elastic spectrum Sae(T)",
         secondLabel: "Reduced design spectrum SaR(T)"
@@ -3331,13 +3331,13 @@ S(T) = Sa(10) Â· (10/T)Â²`;
       formatMetric(els.metric3Value, elasticPeak, "g");
       formatMetric(els.metric4Value, designPeak, "g");
 
-      els.chartTitle.textContent = "TÃ¼rkiye elastic and reduced design spectra";
+      els.chartTitle.textContent = "Türkiye elastic and reduced design spectra";
       els.chartSubtitle.textContent =
         "TBDY 2018 horizontal elastic spectrum and period-dependent earthquake-load reduction.";
       els.legendOne.textContent = "Elastic Sae(T)";
       els.legendTwo.textContent = "Reduced SaR(T)";
 
-      els.detailsTitle.textContent = "Selected TÃ¼rkiye parameters";
+      els.detailsTitle.textContent = "Selected Türkiye parameters";
       els.detailsCopy.textContent =
         "SDS and SD1 are site-adjusted design spectral coefficients obtained from map values and local soil factors.";
 
@@ -3352,16 +3352,16 @@ S(T) = Sa(10) Â· (10/T)Â²`;
 
       els.formulaBox.textContent =
 `Horizontal elastic design spectrum:
-0 â‰¤ T â‰¤ TA:   Sae(T) = (0.4 + 0.6Â·T/TA)Â·SDS
-TA < T â‰¤ TB:  Sae(T) = SDS
-TB < T â‰¤ TL:  Sae(T) = SD1/T
-T > TL:       Sae(T) = SD1Â·TL/TÂ²
+0 ≤ T ≤ TA:   Sae(T) = (0.4 + 0.6·T/TA)·SDS
+TA < T ≤ TB:  Sae(T) = SDS
+TB < T ≤ TL:  Sae(T) = SD1/T
+T > TL:       Sae(T) = SD1·TL/T²
 
-TA = 0.2Â·SD1/SDS
+TA = 0.2·SD1/SDS
 TB = SD1/SDS
 
 Earthquake-load reduction:
-T â‰¤ TB:  Ra(T) = D + (R/I âˆ’ D)Â·T/TB
+T ≤ TB:  Ra(T) = D + (R/I − D)·T/TB
 T > TB:  Ra(T) = R/I
 
 Reduced design spectrum:
@@ -3421,33 +3421,33 @@ SaR(T) = Sae(T) / Ra(T)`;
         parameterCard("Soil type", x.soil),
         parameterCard("Importance, I", x.I.toFixed(2)),
         parameterCard("Reduction, R", x.R.toFixed(2)),
-        parameterCard("(Z/2)Â·(I/R)", scale.toFixed(4)),
+        parameterCard("(Z/2)·(I/R)", scale.toFixed(4)),
         parameterCard("Damping", "5%")
       ].join("");
 
       els.formulaBox.textContent =
 `Design horizontal acceleration coefficient:
-Ah(T) = (Z/2) Â· (I/R) Â· (Sa/g)
+Ah(T) = (Z/2) · (I/R) · (Sa/g)
 
 Response-spectrum method, 5% damping:
 
 All soil types:
-0 â‰¤ T < 0.10 s: Sa/g = 1 + 15T
+0 ≤ T < 0.10 s: Sa/g = 1 + 15T
 
-Type I â€” rock or hard soil:
-0.10 â‰¤ T < 0.40 s: Sa/g = 2.5
-0.40 â‰¤ T < 4.00 s: Sa/g = 1/T
-T â‰¥ 4.00 s: Sa/g = 0.25
+Type I — rock or hard soil:
+0.10 ≤ T < 0.40 s: Sa/g = 2.5
+0.40 ≤ T < 4.00 s: Sa/g = 1/T
+T ≥ 4.00 s: Sa/g = 0.25
 
-Type II â€” medium or stiff soil:
-0.10 â‰¤ T < 0.55 s: Sa/g = 2.5
-0.55 â‰¤ T < 4.00 s: Sa/g = 1.36/T
-T â‰¥ 4.00 s: Sa/g = 0.34
+Type II — medium or stiff soil:
+0.10 ≤ T < 0.55 s: Sa/g = 2.5
+0.55 ≤ T < 4.00 s: Sa/g = 1.36/T
+T ≥ 4.00 s: Sa/g = 0.34
 
-Type III â€” soft soil:
-0.10 â‰¤ T < 0.67 s: Sa/g = 2.5
-0.67 â‰¤ T < 4.00 s: Sa/g = 1.67/T
-T â‰¥ 4.00 s: Sa/g = 0.42`;
+Type III — soft soil:
+0.10 ≤ T < 0.67 s: Sa/g = 2.5
+0.67 ≤ T < 4.00 s: Sa/g = 1.67/T
+T ≥ 4.00 s: Sa/g = 0.42`;
 
       els.standardNote.innerHTML =
         '<strong>Edition note:</strong> This module specifically implements IS 1893 (Part 1):2016. '
@@ -3475,8 +3475,8 @@ T â‰¥ 4.00 s: Sa/g = 0.42`;
       const rarePeak = Math.max(...currentRows.map(row => row.first));
       const frequentPeak = Math.max(...currentRows.map(row => row.second));
 
-      els.metric1Label.innerHTML = "Frequent-earthquake Î±<sub>max</sub>";
-      els.metric2Label.innerHTML = "Rare-earthquake Î±<sub>max</sub>";
+      els.metric1Label.innerHTML = "Frequent-earthquake α<sub>max</sub>";
+      els.metric2Label.innerHTML = "Rare-earthquake α<sub>max</sub>";
       els.metric3Label.textContent = "Maximum rare-earthquake coefficient";
       els.metric4Label.textContent = "Maximum frequent-earthquake coefficient";
 
@@ -3500,29 +3500,29 @@ T â‰¥ 4.00 s: Sa/g = 0.42`;
         parameterCard("Earthquake group", x.group),
         parameterCard("Site category", x.site),
         parameterCard("T<sub>g</sub>", `${x.Tg.toFixed(2)} s`),
-        parameterCard("Attenuation Î³", x.gamma.toFixed(3)),
-        parameterCard("Damping Î·â‚‚", x.eta2.toFixed(3))
+        parameterCard("Attenuation γ", x.gamma.toFixed(3)),
+        parameterCard("Damping η₂", x.eta2.toFixed(3))
       ].join("");
 
       els.formulaBox.textContent =
 `GB 50011 seismic influence coefficient:
 
-0 â‰¤ T â‰¤ 0.1 s:
-Î±(T) = Î±max Â· [0.45 + (Î·2 âˆ’ 0.45)Â·T/0.1]
+0 ≤ T ≤ 0.1 s:
+α(T) = αmax · [0.45 + (η2 − 0.45)·T/0.1]
 
-0.1 s < T â‰¤ Tg:
-Î±(T) = Î·2 Â· Î±max
+0.1 s < T ≤ Tg:
+α(T) = η2 · αmax
 
-Tg < T â‰¤ 5Tg:
-Î±(T) = Î·2 Â· Î±max Â· (Tg/T)^Î³
+Tg < T ≤ 5Tg:
+α(T) = η2 · αmax · (Tg/T)^γ
 
-5Tg < T â‰¤ 6 s:
-Î±(T) = Î±max Â· [Î·2Â·0.2^Î³ âˆ’ Î·1Â·(T âˆ’ 5Tg)]
+5Tg < T ≤ 6 s:
+α(T) = αmax · [η2·0.2^γ − η1·(T − 5Tg)]
 
-Î³, Î·1 and Î·2 vary with damping ratio.`;
+γ, η1 and η2 vary with damping ratio.`;
 
       els.standardNote.innerHTML =
-        '<strong>GB 50011:</strong> The frequent- and rare-earthquake Î±<sub>max</sub> values are '
+        '<strong>GB 50011:</strong> The frequent- and rare-earthquake α<sub>max</sub> values are '
         + 'selected from the chosen precaution intensity. Confirm the city-specific intensity, '
         + 'design earthquake group and site category in the applicable Chinese code tables.';
 
@@ -3546,7 +3546,7 @@ Tg < T â‰¤ 5Tg:
       const elasticPeak = Math.max(...currentRows.map(row => row.first));
       const reducedPeak = Math.max(...currentRows.map(row => row.second));
 
-      els.metric1Label.innerHTML = "Ground coefficient, aâ‚€";
+      els.metric1Label.innerHTML = "Ground coefficient, a₀";
       els.metric2Label.innerHTML = "Plateau coefficient, c";
       els.metric3Label.textContent = "Maximum elastic spectral coefficient";
       els.metric4Label.textContent = "Maximum simplified reduced coefficient";
@@ -3564,38 +3564,38 @@ Tg < T â‰¤ 5Tg:
 
       els.detailsTitle.textContent = "Selected Mexico City parameters";
       els.detailsCopy.textContent =
-        "The elastic spectral shape uses aâ‚€, c, Ta, Tb and k; the reduction is entered as one combined factor.";
+        "The elastic spectral shape uses a₀, c, Ta, Tb and k; the reduction is entered as one combined factor.";
 
       els.parameterGrid.innerHTML = [
-        parameterCard("aâ‚€", x.a0.toFixed(3)),
+        parameterCard("a₀", x.a0.toFixed(3)),
         parameterCard("c", x.c.toFixed(3)),
         parameterCard("T<sub>a</sub>", `${x.ta.toFixed(2)} s`),
         parameterCard("T<sub>b</sub>", `${x.tb.toFixed(2)} s`),
         parameterCard("k", x.k.toFixed(2)),
-        parameterCard("Qâ€²Râ€²Ï", x.reduction.toFixed(2))
+        parameterCard("Q′R′ρ", x.reduction.toFixed(2))
       ].join("");
 
       els.formulaBox.textContent =
 `Transparent elastic spectrum:
 
 T < Ta:
-Sa(T,Q=1) = a0 + (c âˆ’ a0)Â·T/Ta
+Sa(T,Q=1) = a0 + (c − a0)·T/Ta
 
-Ta â‰¤ T < Tb:
+Ta ≤ T < Tb:
 Sa(T,Q=1) = c
 
-T â‰¥ Tb:
-p = k + (1 âˆ’ k)Â·(Tb/T)Â²
-Sa(T,Q=1) = cÂ·pÂ·(Tb/T)Â²
+T ≥ Tb:
+p = k + (1 − k)·(Tb/T)²
+Sa(T,Q=1) = c·p·(Tb/T)²
 
 Simplified reduced spectrum:
-Sa,reduced(T) = Sa(T,Q=1) / (Qâ€²Râ€²Ï)`;
+Sa,reduced(T) = Sa(T,Q=1) / (Q′R′ρ)`;
 
       els.standardNote.innerHTML =
         '<strong>Mexico City NTC-Sismo 2023:</strong> The location-specific parameters and the '
         + 'official reduced spectrum should be obtained from SASID. The combined reduction field in '
         + 'this preliminary tool is a simplified comparison and does not replace the period-dependent '
-        + 'Qâ€², Râ€² and redundancy provisions of the standard.';
+        + 'Q′, R′ and redundancy provisions of the standard.';
 
       drawChart(currentRows, 6, [
         { label: "Ta", value: x.ta },
@@ -3609,7 +3609,7 @@ Sa,reduced(T) = Sa(T,Q=1) / (Qâ€²Râ€²Ï)`;
       currentMeta = {
         standard: "Iran Standard 2800 Fourth Edition",
         x,
-        firstLabel: "Elastic design spectrum AÂ·B(T)",
+        firstLabel: "Elastic design spectrum A·B(T)",
         secondLabel: "Reduced structural design spectrum"
       };
 
@@ -3629,18 +3629,18 @@ Sa,reduced(T) = Sa(T,Q=1) / (Qâ€²Râ€²Ï)`;
       els.chartTitle.textContent = "Iranian elastic and reduced design spectra";
       els.chartSubtitle.textContent =
         "Standard No. 2800 fourth-edition spectral shape for the selected hazard and soil type.";
-      els.legendOne.textContent = "Elastic AÂ·B(T)";
+      els.legendOne.textContent = "Elastic A·B(T)";
       els.legendTwo.textContent = "Reduced design";
 
       els.detailsTitle.textContent = "Selected Iranian parameters";
       els.detailsCopy.textContent =
-        "The soil-dependent Bâ‚(T) shape is scaled by base acceleration A and the entered near-source factor.";
+        "The soil-dependent B₁(T) shape is scaled by base acceleration A and the entered near-source factor.";
 
       els.parameterGrid.innerHTML = [
         parameterCard("Soil type", x.soil),
-        parameterCard("Sâ‚€", x.S0.toFixed(2)),
+        parameterCard("S₀", x.S0.toFixed(2)),
         parameterCard("S", x.S.toFixed(2)),
-        parameterCard("Tâ‚€", `${x.T0.toFixed(2)} s`),
+        parameterCard("T₀", `${x.T0.toFixed(2)} s`),
         parameterCard("T<sub>s</sub>", `${x.Ts.toFixed(2)} s`),
         parameterCard("I / R", `${x.I.toFixed(2)} / ${x.R.toFixed(2)}`)
       ].join("");
@@ -3648,21 +3648,21 @@ Sa,reduced(T) = Sa(T,Q=1) / (Qâ€²Râ€²Ï)`;
       els.formulaBox.textContent =
 `Standard No. 2800 spectral shape:
 
-0 â‰¤ T < T0:
-B1(T) = S0 + (S âˆ’ S0 + 1)Â·T/T0
+0 ≤ T < T0:
+B1(T) = S0 + (S − S0 + 1)·T/T0
 
-T0 â‰¤ T â‰¤ Ts:
+T0 ≤ T ≤ Ts:
 B1(T) = S + 1
 
 T > Ts:
-B1(T) = (S + 1)Â·(Ts/T)^(2/3)
+B1(T) = (S + 1)·(Ts/T)^(2/3)
 
 Elastic spectrum:
-B(T) = B1(T)Â·N
-Sa,e(T) = AÂ·B(T)
+B(T) = B1(T)·N
+Sa,e(T) = A·B(T)
 
 Reduced structural spectrum:
-Sa,d(T) = AÂ·B(T)Â·I/R`;
+Sa,d(T) = A·B(T)·I/R`;
 
       els.standardNote.innerHTML =
         '<strong>Iran Standard No. 2800:</strong> The near-source amplification is represented by '
@@ -3717,7 +3717,7 @@ Sa,d(T) = AÂ·B(T)Â·I/R`;
           "Generate United States two-period spectra or load official USGS multi-period spectra.";
         updateUsOptionUI();
       } else if (standard === "newzealand") {
-        els.codeBadge.textContent = "NZS 1170.5:2004 Â· simplified";
+        els.codeBadge.textContent = "NZS 1170.5:2004 · simplified";
         els.headerSubtitle.textContent =
           "Generate the NZS 1170.5 elastic site spectrum with a clearly labelled simplified structural-reduction comparison.";
         updateNewZealand();
@@ -3734,7 +3734,7 @@ Sa,d(T) = AÂ·B(T)Â·I/R`;
       } else if (standard === "turkey") {
         els.codeBadge.textContent = "TBDY 2018";
         els.headerSubtitle.textContent =
-          "Generate TÃ¼rkiye horizontal elastic and reduced design response spectra.";
+          "Generate Türkiye horizontal elastic and reduced design response spectra.";
         updateTurkey();
       } else if (standard === "india") {
         els.codeBadge.textContent = "IS 1893:2016";
@@ -3804,7 +3804,7 @@ Sa,d(T) = AÂ·B(T)Â·I/R`;
       const url = `https://earthquake.usgs.gov/ws/building-codes/asce7-22/calculate?${params.toString()}`;
 
       els.usgsLookupBtn.disabled = true;
-      setLookupStatus("Loading the ASCE 7-22 spectrum from USGSâ€¦", "info");
+      setLookupStatus("Loading the ASCE 7-22 spectrum from USGS…", "info");
 
       try {
         const response = await fetch(url);
