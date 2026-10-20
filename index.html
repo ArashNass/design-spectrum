@@ -850,7 +850,7 @@
 <meta property="og:title" content="Seismic Design Spectrum Generator | Arash Nassirpour">
 <meta property="og:description" content="Generate and compare seismic design spectra for Eurocode 8, ASCE 7-22, NZS 1170.5, AS 1170.4, NBC, TBDY, IS 1893 and other standards.">
 <meta property="og:url" content="https://arashnassirpour.com/design-spectrum/"><meta property="og:image" content="https://arashnassirpour.com/design-spectrum/og-image.png">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0WERZ6WKQY"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-0WERZ6WKQY");</script>
+<script defer src="/assets/analytics.js?v=2"></script>
 <style>
 /* phone layout: let grid tracks shrink below their content so nothing pushes the page wider than the screen */
 @media (max-width:1000px){.layout,.main{grid-template-columns:minmax(0,1fr)}.layout>*,.main>*{min-width:0}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.parameter-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
@@ -860,6 +860,10 @@
 /* phones: 16px form fields stop iOS Safari zooming the page in when one is tapped */
 @media (max-width:760px){input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]):not([type=file]),select,textarea{font-size:16px!important}}
 </style>
+
+<script defer src="/assets/engagement.js?v=1"></script>
+<script type="module" src="/assets/vitals.js?v=1"></script>
+<link rel="stylesheet" href="/assets/tool-guide.css?v=1">
 </head>
 <body>
 
@@ -1113,7 +1117,7 @@
 </select>
 </div>
 </div>
-<button class="primary" id="usgsLookupBtn" type="button">Load USGS spectrum</button>
+<button class="primary" id="usgsLookupBtn" data-track-action="lookup_requested" type="button">Load USGS spectrum</button>
 <div class="status info" id="lookupStatus"></div>
 </div>
 </div>
@@ -1479,8 +1483,8 @@
 </div>
 <div class="section-divider"></div>
 <div class="action-row">
-<button class="primary" id="downloadBtn" type="button">Export CSV</button>
-<button class="secondary" id="sampleBtn" type="button">Load sample data</button>
+<button class="primary" id="downloadBtn" data-track-action="export_requested" type="button">Export CSV</button>
+<button class="secondary" id="sampleBtn" data-track-action="load_example" type="button">Load sample data</button>
 </div>
 </aside>
 <div class="main">
@@ -1534,7 +1538,8 @@
 </div>
 </section>
 
-</main><footer class="site-ft"><style>
+</main><section class="platform-guide" aria-labelledby="platform-guide-title"><h2 id="platform-guide-title">Using seismic design spectra</h2><p>Generate and compare spectra for the standards supported by this tool. A spectrum shows how earthquake demand varies with oscillator period; code choices and parameters must match the intended application.</p><details><summary>Try a worked example</summary><ol><li>Load the built-in sample for the selected standard.</li><li>Compare elastic and reduced spectra and identify the period range where they differ.</li><li>Change one input at a time, then export the plotted data for comparison.</li></ol></details><nav aria-label="Related tools"><a href="/ground-motion/">Ground motion analysis</a><a href="/performance-point-evaluator/">Performance point evaluation</a></nav></section>
+<footer class="site-ft"><style>
 .site-ft{background:#0f2350;border-top:1px solid rgba(255,255,255,.08);flex-shrink:0;line-height:normal;font-family:Inter,'Segoe UI',system-ui,sans-serif}
 .site-ft .ft-in{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:14px 24px}
 .site-ft .ft-copy{font-size:12.5px;color:#fff}
@@ -3825,6 +3830,7 @@ Sa,d(T) = A·B(T)·I/R`;
       else if (els.standard.value === "china") updateChina();
       else if (els.standard.value === "mexico") updateMexico();
       else updateIran();
+      window.PlatformMetrics?.complete('calculate');
     }
 
     async function loadUsGSSpectrum() {
@@ -4016,6 +4022,7 @@ Sa,d(T) = A·B(T)·I/R`;
       anchor.download = `${(currentMeta.standard || "spectrum").toLowerCase().replace(/[^a-z0-9]+/g, "_")}.csv`;
       document.body.appendChild(anchor);
       anchor.click();
+      window.PlatformMetrics?.emit('export_ready',{format:'csv'});
       anchor.remove();
       URL.revokeObjectURL(url);
     }
